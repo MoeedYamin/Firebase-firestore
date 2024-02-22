@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1000675850628",
+    "project_id": "task1-ui-firebase-firest-21b2c",
+    "storage_bucket": "task1-ui-firebase-firest-21b2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000675850628:android:e3f49af37e51154bab05d1",
+        "android_client_info": {
+          "package_name": "com.example.task1_ui_firebase_firestore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3YfuGQqE19Wj8CGmMSXAPIiyvVNoa6V4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".mainScreen">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/welcomeTextViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_120dp"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/editProfileTextViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeTextViewMain"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:text="@string/edit_your_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp" />
+
+        <EditText
+            android:id="@+id/firstnameEditTextMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editProfileTextViewMain"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/fname"
+            android:drawablePadding="@dimen/_10dp"
+            android:padding="@dimen/_12dp" />
+
+        <TextView
+            android:id="@+id/firstnameErrorMessageTextViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstnameEditTextMain"
+            android:paddingStart="@dimen/_29dp"
+            android:text="@string/field_is_required"
+            android:textColor="@color/red" />
+
+        <EditText
+            android:id="@+id/lastnameEditTextMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstnameEditTextMain"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/fname"
+            android:drawablePadding="@dimen/_10dp"
+            android:padding="@dimen/_12dp" />
+
+        <TextView
+            android:id="@+id/lastnameErrorMessageTextViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastnameEditTextMain"
+            android:paddingStart="@dimen/_29dp"
+            android:text="@string/field_is_required"
+            android:textColor="@color/red" />
+
+
+        <EditText
+            android:id="@+id/emailEditTextMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastnameEditTextMain"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_25dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="@dimen/_10dp"
+            android:padding="@dimen/_12dp" />
+
+
+        <TextView
+            android:id="@+id/emailErrorMessageTextViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailEditTextMain"
+            android:paddingStart="@dimen/_29dp"
+            android:text="@string/field_is_required"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/editButtonMain"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_below="@id/emailErrorMessageTextViewMain"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/edit_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editButtonMain"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/white_prograssbar"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

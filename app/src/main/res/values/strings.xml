@@ -1,0 +1,39 @@
+<resources>
+<!--  XML  -->
+    <string name="app_name">Task1_UI_Firebase_Firestore</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_last_name">Enter last name</string>
+    <string name="field_is_required">This field is required*</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="logout">Logout</string>
+    <string name="dont_have_account">Do not have an account? Sign up</string>
+    <string name="welcome">Welcome</string>
+    <string name="user">User</string>
+    <string name="edit_your_profile">Edit your profile</string>
+    <string name="edit_details">Edit details</string>
+
+    <!--  Kotlin classes  -->
+    <string name="done">Done</string>
+    <string name="updating">Updating</string>
+    <string name="profile_not_found">Profile not found</string>
+    <string name="sure_to_logout">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="logging_in">Logging in…</string>
+    <string name="no">No</string>
+    <string name="profile">Profile</string>
+    <string name="login_failed">Login failed. Please register</string>
+    <string name="error_signing_in">Error signing in</string>
+    <string name="error_logging_in">Error logging in</string>
+    <string name="failed">Failed</string>
+    <string name="registration_success">Registration successful</string>
+    <string name="registration_failed">Registration failed</string>
+    <string name="login_success">Login successful</string>
+    <string name="user_not_found">User not found</string>
+
+
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".loginScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_150dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:text="@string/login_to_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailEditTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12dp"
+        android:layout_marginEnd="@dimen/_12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="@dimen/_10dp"
+        android:hint="@string/enter_email"
+        android:padding="@dimen/_13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/emailErrorMessageTextViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_29dp"
+        android:text="@string/field_is_required"
+        android:textColor="@color/red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/passwordEditTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_12dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="@dimen/_10dp"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_13dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+
+        <ImageButton
+            android:id="@+id/showHideLogin"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_neg_70dp"
+            android:layout_marginTop="@dimen/_19dp"
+            android:src="@drawable/eye_close" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/passErrorMessageTextViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:paddingStart="@dimen/_29dp"
+        android:text="@string/field_is_required"
+        android:textColor="@color/red" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/signupTextViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="@string/dont_have_account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10dp"
+        android:visibility="invisible"
+        android:background="@drawable/white_prograssbar"
+        />
+
+
+</LinearLayout>
